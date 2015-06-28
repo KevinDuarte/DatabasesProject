@@ -3,7 +3,8 @@ This is where the sql scripts to create tables and to query the tables will go.
 CREATE TABLE student
 (
 studentID int,
-name varchar(50),
+first_name varchar(20),
+last_name varchar(20),
 email varchar(50),
 university varchar(30),
 PRIMARY KEY (studentID)
@@ -11,7 +12,7 @@ PRIMARY KEY (studentID)
 
 CREATE TABLE admin
 (
-adminID int,
+adminID int not null REFERENCES student(studentID),
 PRIMARY KEY (adminID)
 );
 
