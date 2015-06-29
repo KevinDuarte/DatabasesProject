@@ -5,7 +5,8 @@ CREATE TABLE student
 studentID int,
 first_name varchar(20),
 last_name varchar(20),
-email varchar(50),
+password varchar(20) NOT NULL,
+email varchar(50) NOT NULL,
 university varchar(30),
 PRIMARY KEY (studentID)
 );
