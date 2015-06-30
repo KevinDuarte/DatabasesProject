@@ -44,9 +44,7 @@
          </article>
 
             -->
-      </header>
-
-      </header> <!-- End of header -->
+      </header>  <!-- End of header -->
 
       <div id="content">
       <section>

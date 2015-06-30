@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 public partial class Home : System.Web.UI.Page
 {
@@ -18,38 +20,42 @@ public partial class Home : System.Web.UI.Page
     {
         string email = String.Format("{0}", Request.Form["email"]);
         string password = String.Format("{0}", Request.Form["password"]);
+        RegexUtilities util = new RegexUtilities();
         
-        //all fields are not complete
         if (email.CompareTo("") == 0 || password.CompareTo("") == 0)
         {
-            //do something to notify the user
-            return;
+            //all fields are not completed
+            Response.Write("Complete all fields");
+        }
+        else if(!util.IsValidEmail(email))
+        {
+            //email is not valid
+            Response.Write("Not a valid email");
         }
         else
         {
-
             SqlConnection objConnection = new SqlConnection("Data Source=184.168.194.68;Initial Catalog=EventsDB;Integrated Security=False;User ID=kevin95duarte;password=sqlpassword1;Connect Timeout=15;Encrypt=False;Packet Size=4096");
-
 
             try
             {
                 objConnection.Open();
-
-                Response.Write("successfully opened the connection");
-
-                
-                string strSQL = String.Format("select * from users where email='{0}' and password='{1}'", email, password);
+           
+                //checks if the email and password are in the DB
+                string strSQL = String.Format("select * from student where email='{0}' and password='{1}'", email, password);
                 SqlCommand objCommand = new SqlCommand(strSQL, objConnection);
                 SqlDataReader objReader = objCommand.ExecuteReader();
 
+                //if the email/password combo are in the DB, then login is successful
                 if (objReader.Read())
                 {
-                    Response.Write(String.Format("Succes, ID={0}", objReader["ID"]));
+                    //saves the student id to the session
                     int nID = Convert.ToInt32(objReader["studentID"]);
                     Session["studentID"] = nID;
+                    Response.Redirect("Events.aspx");
                 }
                 else
                 {
+                    //login failed
                     Response.Write("login failed");
                 }
                 objReader.Close();
@@ -66,11 +72,6 @@ public partial class Home : System.Web.UI.Page
                     objConnection.Close();
                 }
             }
-
-            //check database
-
-            //if account is in database -> Events.aspx
-            //else notify user that the inputs are not correct
         }
     }
 
