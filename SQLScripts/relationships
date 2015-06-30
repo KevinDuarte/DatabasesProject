@@ -1,0 +1,73 @@
+CREATE TABLE managedby(
+directorID INTENGER,
+universityID INTEGER,
+PRIMARY KEY(directorID, universityID),
+FORIEGN KEY(directorID) REFERENCES director,
+FORIEGN KEY(universityID) REFERENCES university)
+
+CREATE TABLE partof(
+universityID INTEGER,
+rsoID INTEGER,
+PRIMARY KEY(universityID, rsoID),
+FORIEGN KEY(universityID) REFERENCES university,
+FORIEGN KEY(rsoID) REFERENCES rso)
+
+
+CREATE TABLE managed(
+adminID INTEGER,
+rsoID INTEGER,
+PRIMARY KEY(adminID, rsoID),
+FORIEGN KEY(adminID) REFERENCES admin,
+FORIEGN KEY(rsoID) REFERENCES rso)
+
+
+CREATE TABLE locatedat(
+universityID INTEGER,
+locationID INTEGER,
+PRIMARY KEY(universityID, locationID),
+FORIEGN KEY(universityID) REFERENCES university,
+FORIEGN KEY(locationID) REFERENCES location)
+
+
+CREATE TABLE heldat(
+locationID INTEGER,
+eventID INTEGER,
+PRIMARY KEY(locationID, eventID),
+FORIEGN KEY(eventID) REFERENCES event,
+FORIEGN KEY(locationID) REFERENCES location)
+
+
+CREATE TABLE hostedby(
+universityID INTEGER,
+eventID INTEGER,
+PRIMARY KEY(universityID, eventID),
+FORIEGN KEY(universityID) REFERENCES university,
+FORIEGN KEY(eventID) REFERENCES event)
+
+
+CREATE TABLE organizedby(
+eventID INTEGER,
+rsoID INTEGER,
+PRIMARY KEY(eventID, rsoID),
+FORIEGN KEY(eventID) REFERENCES event,
+FORIEGN KEY(rsoID) REFERENCES rso)
+
+
+CREATE TABLE memeberof(
+studentID INTEGER,
+rsoID INTEGER,
+PRIMARY KEY(studentID, rsoID),
+FORIEGN KEY(studentID) REFERENCES student,
+FORIEGN KEY(rsoID) REFERENCES rso)
+
+
+CREATE TABLE attending(
+studentID INTEGER,
+eventID INTEGER,
+PRIMARY KEY(studentID, eventID),
+FORIEGN KEY(studentID) REFERENCES student,
+FORIEGN KEY(eventID) REFERENCES event)
+
+
+
+
