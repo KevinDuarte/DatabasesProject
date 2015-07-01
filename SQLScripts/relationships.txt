@@ -1,3 +1,6 @@
+/*Relationship Tables*/
+
+/*Relationship between director (SuperAdmin) and university*/
 CREATE TABLE managedby
 (
 directorID INTENGER,
@@ -7,6 +10,7 @@ FORIEGN KEY(directorID) REFERENCES director(directorID),
 FORIEGN KEY(universityID) REFERENCES university(universityID)
 );
 
+/*Relationship between university and rso*/
 CREATE TABLE partof
 (
 universityID INTEGER,
@@ -16,7 +20,7 @@ FORIEGN KEY(universityID) REFERENCES university(universityID),
 FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
-
+/*Relationship between admin and rso*/
 CREATE TABLE managed
 (
 adminID INTEGER,
@@ -26,7 +30,7 @@ FORIEGN KEY(adminID) REFERENCES admin(adminID),
 FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
-
+/*Relationship between university and location*/
 CREATE TABLE locatedat
 (
 universityID INTEGER,
@@ -36,7 +40,7 @@ FORIEGN KEY(universityID) REFERENCES university(universityID),
 FORIEGN KEY(locationID) REFERENCES location(locationID)
 );
 
-
+/*Relationship between event and location*/
 CREATE TABLE heldat
 (
 locationID INTEGER,
@@ -46,7 +50,7 @@ FORIEGN KEY(eventID) REFERENCES event(eventID),
 FORIEGN KEY(locationID) REFERENCES location(locationID)
 );
 
-
+/*Relationship between university and event*/
 CREATE TABLE hostedby
 (
 universityID INTEGER,
@@ -56,7 +60,7 @@ FORIEGN KEY(universityID) REFERENCES university(universityID),
 FORIEGN KEY(eventID) REFERENCES event(eventID)
 );
 
-
+/*Relationship between rso and event*/
 CREATE TABLE organizedby
 (
 eventID INTEGER,
@@ -66,7 +70,7 @@ FORIEGN KEY(eventID) REFERENCES event(eventID),
 FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
-
+/*Relationship between student and rso*/
 CREATE TABLE memeberof
 (
 studentID INTEGER,
@@ -76,7 +80,7 @@ FORIEGN KEY(studentID) REFERENCES student(studentID),
 FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
-
+/*Relationship between student and event*/
 CREATE TABLE comments
 (
 studentID INTEGER,
@@ -87,6 +91,7 @@ FORIEGN KEY(studentID) REFERENCES student(studentID),
 FORIEGN KEY(eventID) REFERENCES event(eventID)
 );
 
+/*Relationship between student and university*/
 CREATE TABLE attends
 (
 studentID INTEGER,

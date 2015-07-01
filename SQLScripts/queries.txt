@@ -1,0 +1,38 @@
+/* 
+0 public university event
+1 private university event
+2 RSO event
+*/
+
+
+/*all public events*/
+SELECT E.name;
+FROM event E;
+WHERE E.pubprirso = '0';
+
+
+SELECT E.name
+FROM event E, RSO R, organizedby O
+WHERE E.pubprirso = '2' AND E.eventID = O.eventID AND R.rsoID = O.rsoID
+
+SELECT E.name;
+FROM event E, location L;
+WHERE pubprirso = '0' ; 
+
+SELECT E.name;
+FROM event E, location L;
+WHERE pubprirso = '0' ;
+
+
+SELECT E.name;
+FROM event E, university U;
+WHERE pubprirso = '0' AND universityID = eventID;  
+
+INSERTS INTO student (first_name, last_name, password, email)
+VALUES()
+
+INSERTS INTO event (type, name, date, pubprirso)
+VALUES()
+
+INSERTS INTO rso (name)
+VALUES()

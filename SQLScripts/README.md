@@ -1,5 +1,6 @@
 This is where the sql scripts to create tables and to query the tables will go.
 
+
 CREATE TABLE student
 (
 studentID int IDENTITY(1,1),
@@ -7,7 +8,6 @@ first_name varchar(20),
 last_name varchar(20),
 password varchar(20) NOT NULL,
 email varchar(50) NOT NULL UNIQUE,
-university varchar(30),
 PRIMARY KEY (studentID)
 );
 
@@ -23,6 +23,15 @@ rsoID int IDENTITY(1,1),
 name varchar(50),
 PRIMARY KEY (rosID)
 );
+
+
+/* 
+pubprirso values:
+
+0 public university event
+1 private university event
+2 RSO event
+*/
 
 CREATE TABLE event
 (
@@ -54,5 +63,5 @@ PRIMARY KEY (universityID)
 CREATE TABLE director
 (
 directorID int IDENTITY(1,1),
-PRIMARY KEY (adminID)
+PRIMARY KEY (directorID)
 );
