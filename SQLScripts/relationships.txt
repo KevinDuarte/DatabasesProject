@@ -1,83 +1,83 @@
 /*Relationship Tables*/
 
 /*Relationship between director (SuperAdmin) and university*/
-CREATE TABLE managedby
+CREATE TABLE directs
 (
-directorID INTENGER,
+directorID INTEGER,
 universityID INTEGER,
 PRIMARY KEY(directorID, universityID),
-FORIEGN KEY(directorID) REFERENCES director(directorID),
-FORIEGN KEY(universityID) REFERENCES university(universityID)
+FOREIGN KEY(directorID) REFERENCES director(directorID),
+FOREIGN KEY(universityID) REFERENCES university(universityID)
 );
 
 /*Relationship between university and rso*/
-CREATE TABLE partof
+CREATE TABLE partOf
 (
 universityID INTEGER,
 rsoID INTEGER,
 PRIMARY KEY(universityID, rsoID),
-FORIEGN KEY(universityID) REFERENCES university(universityID),
-FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
+FOREIGN KEY(universityID) REFERENCES university(universityID),
+FOREIGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
 /*Relationship between admin and rso*/
-CREATE TABLE managed
+CREATE TABLE manages
 (
 adminID INTEGER,
 rsoID INTEGER,
 PRIMARY KEY(adminID, rsoID),
-FORIEGN KEY(adminID) REFERENCES admin(adminID),
-FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
+FOREIGN KEY(adminID) REFERENCES admin(adminID),
+FOREIGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
 /*Relationship between university and location*/
-CREATE TABLE locatedat
+CREATE TABLE locatedAt
 (
 universityID INTEGER,
-locationID INTEGER,
-PRIMARY KEY(universityID, locationID),
-FORIEGN KEY(universityID) REFERENCES university(universityID),
-FORIEGN KEY(locationID) REFERENCES location(locationID)
+address varchar(100),
+PRIMARY KEY(universityID, address),
+FOREIGN KEY(universityID) REFERENCES university(universityID),
+FOREIGN KEY(address) REFERENCES location(address)
 );
 
 /*Relationship between event and location*/
-CREATE TABLE heldat
+CREATE TABLE heldAt
 (
-locationID INTEGER,
 eventID INTEGER,
-PRIMARY KEY(locationID, eventID),
-FORIEGN KEY(eventID) REFERENCES event(eventID),
-FORIEGN KEY(locationID) REFERENCES location(locationID)
+address varchar(100),
+PRIMARY KEY(eventID, address),
+FOREIGN KEY(eventID) REFERENCES event(eventID),
+FOREIGN KEY(address) REFERENCES location(address)
 );
 
 /*Relationship between university and event*/
-CREATE TABLE hostedby
+CREATE TABLE hostedBy
 (
 universityID INTEGER,
 eventID INTEGER,
 PRIMARY KEY(universityID, eventID),
-FORIEGN KEY(universityID) REFERENCES university(universityID),
-FORIEGN KEY(eventID) REFERENCES event(eventID)
+FOREIGN KEY(universityID) REFERENCES university(universityID),
+FOREIGN KEY(eventID) REFERENCES event(eventID)
 );
 
 /*Relationship between rso and event*/
-CREATE TABLE organizedby
+CREATE TABLE organizedBy
 (
 eventID INTEGER,
 rsoID INTEGER,
 PRIMARY KEY(eventID, rsoID),
-FORIEGN KEY(eventID) REFERENCES event(eventID),
-FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
+FOREIGN KEY(eventID) REFERENCES event(eventID),
+FOREIGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
 /*Relationship between student and rso*/
-CREATE TABLE memeberof
+CREATE TABLE memeberOf
 (
 studentID INTEGER,
 rsoID INTEGER,
 PRIMARY KEY(studentID, rsoID),
-FORIEGN KEY(studentID) REFERENCES student(studentID),
-FORIEGN KEY(rsoID) REFERENCES rso(rsoID)
+FOREIGN KEY(studentID) REFERENCES student(studentID),
+FOREIGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
 /*Relationship between student and event*/
@@ -87,8 +87,8 @@ studentID INTEGER,
 eventID INTEGER,
 comment varchar(500),
 PRIMARY KEY(studentID, eventID),
-FORIEGN KEY(studentID) REFERENCES student(studentID),
-FORIEGN KEY(eventID) REFERENCES event(eventID)
+FOREIGN KEY(studentID) REFERENCES student(studentID),
+FOREIGN KEY(eventID) REFERENCES event(eventID)
 );
 
 /*Relationship between student and university*/
@@ -97,8 +97,8 @@ CREATE TABLE attends
 studentID INTEGER,
 universityID INTEGER,
 PRIMARY KEY(studentID, universityID),
-FORIEGN KEY(studentID) REFERENCES student(studentID),
-FORIEGN KEY(universityID) REFERENCES university(universityID)
+FOREIGN KEY(studentID) REFERENCES student(studentID),
+FOREIGN KEY(universityID) REFERENCES university(universityID)
 );
 
 
