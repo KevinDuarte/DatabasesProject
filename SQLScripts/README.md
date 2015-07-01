@@ -13,7 +13,7 @@ PRIMARY KEY (studentID)
 
 CREATE TABLE admin
 (
-adminID int not null REFERENCES student(studentID),
+adminID int REFERENCES student(studentID),
 PRIMARY KEY (adminID)
 );
 
@@ -49,4 +49,10 @@ name varchar(30),
 description varchar(100),
 numberofstudents int,
 PRIMARY KEY (universityID)
+);
+
+CREATE TABLE director
+(
+directorID int IDENTITY(1,1),
+PRIMARY KEY (adminID)
 );
