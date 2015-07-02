@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+<html>
+
+   <head> <!-- Beginning of the head -->
+        <!--  
+           -->
+
+      <meta charset="UTF-8" />
+      <title>University Events: New RSO</title>
+
+      <link href="CreateRSO.css" rel="stylesheet" type="text/css" />
+      <link href="CreateRSOChart.css" rel="stylesheet" type="text/css" />
+
+   </head> <!-- End of head -->
+
+   <body> <!-- Beginning of the body -->
+
+      <div id="wrapper">
+      <header> <!--Beginning of the header -->
+
+
+       <h1>University Events</h1> <!-- University Events Website  -->
+
+         <nav>
+            <ul> <!-- Unordered list for webpage links -->
+               <li><a href="Universities.html">Universities</a></li>
+               <li><a href="About.html">About</a></li>
+               <li><a href="#">RSO</a>
+                    <ul>
+                        <a href="CreateRSO.html">Create RSO</a>
+                        <a href="ViewRSO.html">View/Join RSO</a>
+                    </ul>
+               </li>
+               <li><a href="#">Events</a>
+                    <ul>
+                        <a href="CreateEvent.html">Create Events</a>  <!--- Can only be accessed by the admin  -->
+                        <a href="Events.html">View Events</a>
+                    </ul>
+               </li>
+               <li><a href="Home.html">Logout</a></li>
+                      
+            </ul>
+         </nav>
+
+                <!-- Explains the purpose  
+        <article>
+            <h2>Heading</h2>
+            <p>
+            </p>
+         </article>
+
+            -->
+      </header>
+
+      </header> <!-- End of header -->
+
+      <div id="content">
+      <section>
+        <form id="University Events" name="University Events"
+            action="demo_form.asp"
+            action="http://www.UniversityEvents.com/home"
+            onsubmit="return validateForm()" method="post">
+         
+            
+            <!-- Beginning of Customer Information -->
+         <fieldset id="User Information">
+            <legend>Create New RSO</legend>
+
+            <label for="RSOName">RSO Name *</label>
+            <input name="RSOName" id="RSOName" type="text" 
+                   placeholder= "RSO Name" min="5" max="15" 
+                   required="required" />
+    
+            <!-- Asks the user to enter their email address -->
+            <label for="email">E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <!-- Asks the user to enter their email address -->
+            <label for="email">Student 1 E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <!-- Asks the user to enter their email address -->
+            <label for="email">Student 2 E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <!-- Asks the user to enter their email address -->
+            <label for="email">Student 3 E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <!-- Asks the user to enter their email address -->
+            <label for="email">Student 4 E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <!-- Asks the user to enter their email address -->
+            <label for="email">Student 5 E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+      
+            
+
+            <button type="submit">Submit</button> 
+
+            <button type="reset">Clear</button> 
+
+          </fieldset>
+        
+        </form>      
+      </section> <!-- End of section -->
+      </div> <!-- End of content -->
+     
+      <div id="footer"> <!-- Beginning of footer -->
+      <footer> 
+         <address>
+           Copyright &copy 2015 Univerisity Events. All rights reserved.
+         </address>
+      </footer> 
+      </div>  <!-- End of footer -->
+
+    </div>  <!-- End of wrapper -->
+
+</body> <!-- End of body -->
+
+
+</html>

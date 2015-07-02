@@ -1,0 +1,62 @@
+/*
+    Style sheet for CreateRSO
+
+*/
+
+    
+    fieldset {
+        background-color: skyblue;
+        border: 3px solid black;
+        float: left;
+        margin: 75px 0px 10px 30%;
+        width: 40%;
+        color: black;
+    }
+
+    /*Adjusts the attributes of the legend field  */
+    legend {
+        background-color: green;
+        color: white;
+        padding: 3px 2px;
+        text-indent: 5px;
+        width: 100%;
+    }
+
+    /*Adjusts the label styles  */
+    label {
+        clear: left;
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        margin: 7px 4% 7px 5px;
+        width: 40%;
+    }
+
+    /*Adjusts the input styles  */
+    input {
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        margin: 7px 0px;
+        width: 50%;
+        color: red;
+    }
+
+ 
+    /*Adjusts the selection styles  */
+    select {
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        margin: 7px 0px;
+    }
+
+
+/*
+    input[type="submit"], input[type="reset"], input[type="browse"] {
+        display: inline;
+        float: left;
+        height: 40px;
+        width: 160px;
+    }
+*/
