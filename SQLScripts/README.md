@@ -44,19 +44,12 @@ pubprirso int,
 PRIMARY KEY (eventID)
 );
 
-CREATE TABLE location 
-(
-address varchar(100),
-longitutde int,
-latitude int,
-PRIMARY KEY (address)
-);
-
 CREATE TABLE university 
 (
 universityID int IDENTITY(1,1),
 name varchar(30),
-description varchar(100),
+initials varchar(10),
+description varchar(1000),
 PRIMARY KEY (universityID)
 );
 

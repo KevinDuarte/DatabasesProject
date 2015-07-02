@@ -35,9 +35,10 @@ CREATE TABLE locatedAt
 (
 universityID INTEGER,
 address varchar(100),
+longitude FLOAT,
+latitude FLOAT,
 PRIMARY KEY(universityID, address),
 FOREIGN KEY(universityID) REFERENCES university(universityID),
-FOREIGN KEY(address) REFERENCES location(address)
 );
 
 /*Relationship between event and location*/
@@ -45,9 +46,10 @@ CREATE TABLE heldAt
 (
 eventID INTEGER,
 address varchar(100),
+longitude FLOAT,
+latitude FLOAT,
 PRIMARY KEY(eventID, address),
-FOREIGN KEY(eventID) REFERENCES event(eventID),
-FOREIGN KEY(address) REFERENCES location(address)
+FOREIGN KEY(eventID) REFERENCES event(eventID)
 );
 
 /*Relationship between university and event*/
