@@ -73,7 +73,7 @@ FOREIGN KEY(rsoID) REFERENCES rso(rsoID)
 );
 
 /*Relationship between student and rso*/
-CREATE TABLE memeberOf
+CREATE TABLE memberOf
 (
 studentID INTEGER,
 rsoID INTEGER,

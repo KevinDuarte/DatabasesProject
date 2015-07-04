@@ -59,32 +59,55 @@ public partial class CreateAccount : System.Web.UI.Page
                 //email is not in the DB, create the account
                 else
                 {
-                    //inserts the email is in the DB
-                    strSQL = String.Format("INSERT INTO student (first_name, last_name, password, email, university) VALUES ('{0}','{1}','{2}','{3}','{4}');", 
-                        firstName, lastName, password, email, university);
+                    //inserts the student in the DB
+                    strSQL = String.Format("INSERT INTO student (first_name, last_name, password, email) VALUES ('{0}','{1}','{2}','{3}');", 
+                        firstName, lastName, password, email);
                     SqlCommand objCommand2 = new SqlCommand(strSQL, objConnection);
                     objCommand2.ExecuteNonQuery();
 
-                    //saves the student id to the session
-                    objReader.Close();
+                    //gets the universityID
+                    strSQL = String.Format("SELECT * FROM university U WHERE U.initials='{0}'", university);
+                    SqlCommand getUniversityID = new SqlCommand(strSQL, objConnection);
+                    SqlDataReader universityReader = getUniversityID.ExecuteReader();
+                    int universityID = -1;
+
+                    if(universityReader.Read())
+                    {
+                        universityID = Convert.ToInt32(universityReader["universityID"]);
+                    }
+                    else
+                    {
+                        //getting the uniID failed, I dont know how such a thing happened
+                        Response.Write("UniversityID failed");
+                    }
+                    universityReader.Close();
+
+                    //gets the row of the recently created student account
                     strSQL = String.Format("select * from student where email='{0}'", email);
                     SqlCommand objCommand3 = new SqlCommand(strSQL, objConnection);
                     SqlDataReader objReader2 = objCommand3.ExecuteReader();
 
                     if (objReader2.Read())
                     {
-                        int nID = Convert.ToInt32(objReader2["studentID"]);
-                        Session["studentID"] = nID;
+                        //adds the student to the attends table
+                        int studentID = Convert.ToInt32(objReader2["studentID"]);
+                        strSQL = String.Format("INSERT INTO attends(studentID, universityID) VALUES('{0}', '{1}')", studentID, universityID);
+                        SqlCommand insertAttends = new SqlCommand(strSQL, objConnection);
+                        insertAttends.ExecuteNonQuery();
+
+                        //saves the student id to the session
+                        Session["studentID"] = studentID;
+                        //redirects to the View Events page
                         Response.Redirect("Events.aspx");
                     }
                     else
                     {
-                        //login failed
+                        //login failed, I dont know how such a thing happened
                         Response.Write("Creation failed");
                     }
+                    objReader2.Close();
                 }
                 objReader.Close();
-
             }
             catch (Exception ex)
             {

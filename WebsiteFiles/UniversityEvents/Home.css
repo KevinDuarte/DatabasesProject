@@ -187,9 +187,19 @@
         color:#FFFFFF; 
         background: black;
         font-size: 0.8em;
-        text-align: center;
-      
+        text-align: center; 
     }
 
+    /*Styles for social media share buttion */
+
+    #share-buttons img {
+        width: 35px;
+        padding: 5px;
+        border: 0;
+        box-shadow: 0;
+        display: inline;
+       
+        
+    }
 
 

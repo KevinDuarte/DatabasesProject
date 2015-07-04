@@ -41,7 +41,7 @@ public partial class Home : System.Web.UI.Page
                 objConnection.Open();
            
                 //checks if the email and password are in the DB
-                string strSQL = String.Format("select * from student where email='{0}' and password='{1}'", email, password);
+                string strSQL = String.Format("select * from student where UPPER(email)=UPPER('{0}') and password='{1}'", email, password);
                 SqlCommand objCommand = new SqlCommand(strSQL, objConnection);
                 SqlDataReader objReader = objCommand.ExecuteReader();
 

@@ -187,17 +187,6 @@
         
     }
 
-    #share-buttons img {
-        width: 25px;
-        padding: 5px;
-        border: 0;
-        box-shadow: 0;
-        display: inline;
-       
-        
-    }
-
-
 
     /* Adjusts the footer styles of Universitites.html */   
 
@@ -213,4 +202,55 @@
         text-align: center;
       
     }
+
+
+/**********************************************************************************
+
+        Comment Form Styling
+
+
+************************************************************************************/
+
+    #respond {
+         margin-top: 40px;
+    }
+
+    #respond input[type='text'],
+    #respond input[type='email'], 
+    #respond textarea {
+        margin-bottom: 10px;
+        margin-left: 350px;
+        display: block;
+        width: 50%;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+    line-height: 1.4em;
+    }
+
+    #text {
+        margin-left: 350px;
+
+    }
+
+    #submit {
+        margin-left: 650px;
+
+    }
+
+/**********************************************************************************
+
+        End comment Form Styling
+
+
+************************************************************************************/
+
+
+
 

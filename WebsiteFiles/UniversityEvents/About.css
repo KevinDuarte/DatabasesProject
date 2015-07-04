@@ -1,11 +1,11 @@
 /*
 
-   Stylesheet for the Universities.html
+   Stylesheet for the Home.html
 
 */
 
-    /* Displays these features from Universities.html */
-    header, section, footer, nav {
+    /* Displays these features */
+    header, section, footer, nav, html {
         display: block;
     }
 
@@ -15,8 +15,7 @@
       
     }
 
-
-    /*Adjusts the Body styles for Universities.html */
+    /*Adjusts the Body styles*/
     body {
          background-image: url(circuit.jpeg);
          font-family: Times New Roman, Times, sans-serif;
@@ -27,7 +26,7 @@
          width: 100%;
     }
 
-    /* Adjusts the Header styles for Universities.html */
+    /* Adjusts the Header styles*/
     header {
         background-color: skyblue;
         border-bottom: 4px solid black;
@@ -35,9 +34,10 @@
         text-align: center;
         font-weight: bold;
         width: 100%;
+        
     }
 
-    /*Adjusts the header h1 styles for Universitites.html */
+    /*Adjusts the header h1 styles */
     header h1 {
          color: black; 
          background-color: skyblue;
@@ -46,8 +46,8 @@
          text-align: center;
          margin-top: 0;
         
+ 
     }
-
 
  /**********************************************************************************
 
@@ -68,7 +68,7 @@
 
     }
 
-    /* Changes the color of the text for each link in Universities.html */
+    /* Changes the color of the text for each link in Events.html */
     header nav ul li a {
         text-decoration: none; 
         color: black;
@@ -154,12 +154,7 @@
 ************************************************************************************/
 
 
-
-
-
-    
-
-
+  
 
   /* Adjusts the styles of the h2 group */
      h2 {
@@ -171,35 +166,29 @@
         text-align: center;
     }
 
-   /* Ajusts the styles of the paragraph delcared in Universisites.html */
+   /* Adjusts the styles of the paragraph */
      p {
-        color: yellow;
+        color: black;
         font-size: 1.5em;
         line-height: 1.4em;
         margin: 15px;
     }
 
-    button {
-        position: center;
-        color: red;
-        float: center;
-        size: 20px;
-        
-    }
+   /* Adjusts the style for the div labeled content */
+     #content {
+      padding: 25px 70px 70px 25px;
+    
+     
+ 
 
-    #share-buttons img {
-        width: 25px;
-        padding: 5px;
-        border: 0;
-        box-shadow: 0;
-        display: inline;
-       
-        
     }
 
 
 
-    /* Adjusts the footer styles of Universitites.html */   
+
+
+
+    /* Adjusts the footer styles */   
 
     footer {
         position: absolute;
@@ -213,4 +202,6 @@
         text-align: center;
       
     }
+
+
 

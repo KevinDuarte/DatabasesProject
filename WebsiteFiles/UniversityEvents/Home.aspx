@@ -29,7 +29,6 @@
          <nav>
             <ul> <!-- Unordered list for webpage links -->
                <li><a href="Home.aspx">Home</a></li>
-               <li><a href="Universities.aspx">Universities</a></li>
                <li><a href="About.html">About</a></li>
                       
             </ul>
@@ -60,13 +59,10 @@
             <label for="password">Password *</label>
             <input name ="password" id="password" type="password" size="15"/>
 
-            <button runat="server" OnServerClick="btnCreateAcc_Click">Create Account</button> 
-            <button runat="server" OnServerClick="btnForgotPass_Click">Forgot Password</button>
-
 
             <button type="submit"  runat="server" OnServerClick="btnSubmit_Click">Submit</button>
+            <button runat="server" OnServerClick="btnCreateAcc_Click">Create Account</button> 
 
-            
             </fieldset>
         
       </section> <!-- End of section -->

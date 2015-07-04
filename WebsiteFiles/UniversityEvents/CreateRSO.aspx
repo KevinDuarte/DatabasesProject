@@ -26,9 +26,8 @@
 
          <nav>
             <ul> <!-- Unordered list for webpage links -->
-               <li><a href="Home.aspx">Home</a></li>
+               
                <li><a href="Universities.aspx">Universities</a></li>
-               <li><a href="About.html">About</a></li>
                <li><a href="#">RSO</a>
                     <ul>
                         <a href="CreateRSO.aspx">Create RSO</a>
@@ -41,7 +40,7 @@
                         <a href="Events.aspx">View Events</a>
                     </ul>
                </li>
-             
+               <li><a href="Home.aspx">Logout</a></li>
                       
             </ul>
          </nav>
@@ -75,27 +74,27 @@
 
             <!-- Asks the user to enter their email address -->
             <label for="email">Student 1 E-mail *</label>
-            <input name="email" id="email1" type="email" 
+            <input name="email1" id="email1" type="email" 
                    required="required" />
 
             <!-- Asks the user to enter their email address -->
             <label for="email">Student 2 E-mail *</label>
-            <input name="email" id="email2" type="email" 
+            <input name="email2" id="email2" type="email" 
                    required="required" />
 
             <!-- Asks the user to enter their email address -->
             <label for="email">Student 3 E-mail *</label>
-            <input name="email" id="email3" type="email" 
+            <input name="email3" id="email3" type="email" 
                    required="required" />
 
             <!-- Asks the user to enter their email address -->
             <label for="email">Student 4 E-mail *</label>
-            <input name="email" id="email4" type="email" 
+            <input name="email4" id="email4" type="email" 
                    required="required" />
 
             <!-- Asks the user to enter their email address -->
             <label for="email">Student 5 E-mail *</label>
-            <input name="email" id="email5" type="email" 
+            <input name="email5" id="email5" type="email" 
                    required="required" />
       
 

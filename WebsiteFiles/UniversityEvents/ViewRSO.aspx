@@ -30,9 +30,7 @@
 
          <nav>
             <ul> <!-- Unordered list for webpage links -->
-               <li><a href="Home.aspx">Home</a></li>
                <li><a href="Universities.aspx">Universities</a></li>
-               <li><a href="About.html">About</a></li>
                <li><a href="#">RSO</a>
                     <ul>
                         <a href="CreateRSO.aspx">Create RSO</a>
@@ -45,7 +43,7 @@
                         <a href="Events.aspx">View Events</a>
                     </ul>
                </li>
-             
+             <li><a href="Home.aspx">Logout</a></li>
                       
             </ul>
          </nav>
@@ -81,6 +79,43 @@
                <col class="information" span="3" />
                
             </colgroup>
+
+
+<!-------------------------------------------------------------
+
+        Beginning of share buttons
+
+
+----------------------------------------------------------------->
+
+      <div id="share-buttons">
+
+             
+    <!-- Twitter -->
+     <a href="https://twitter.com/share" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+     </a>
+
+    <!-- Enter website url after u in the linl -->
+     <a href="http://www.facebook.com/sharer.php?u" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+     </a>
+
+     <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+     </a>
+
+     </div>
+
+<!-------------------------------------------------------------
+
+        End of share buttons
+
+
+----------------------------------------------------------------->
+
+
+
 
             <thead> <!-- Heading of the table / Days of the week for Events -->
                 <tr>

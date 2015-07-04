@@ -30,7 +30,6 @@
          <nav>
             <ul> <!-- Unordered list for webpage links -->
                <li><a href="Home.aspx">Home</a></li>
-               <li><a href="Universities.aspx">Universities</a></li>
                <li><a href="About.html">About</a></li>
                       
             </ul>

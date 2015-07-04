@@ -27,9 +27,7 @@
 
          <nav>
             <ul> <!-- Unordered list for webpage links -->
-               <li><a href="Home.aspx">Home</a></li>
                <li><a href="Universities.aspx">Universities</a></li>
-               <li><a href="About.html">About</a></li>
                <li><a href="#">RSO</a>
                     <ul>
                         <a href="CreateRSO.aspx">Create RSO</a>
@@ -42,6 +40,7 @@
                         <a href="Events.aspx">View Events</a>
                     </ul>
                </li>
+                <li><a href="Home.aspx">Logout</a></li>
                               
             </ul>
          </nav>
