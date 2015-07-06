@@ -1,10 +1,10 @@
 /*
 
-   Stylesheet for the Universities.html
+   Stylesheet for the Details.html
 
 */
 
-    /* Displays these features */
+    /* Displays these features*/
     header, section, footer, nav {
         display: block;
     }
@@ -16,7 +16,7 @@
     }
 
 
-    /*Adjusts the Body styles for Universities.html */
+    /*Adjusts the Body styles */
     body {
          background-image: url(circuit.jpeg);
          font-family: Times New Roman, Times, sans-serif;
@@ -27,7 +27,7 @@
          width: 100%;
     }
 
-    /* Adjusts the Header styles for Universities.html */
+    /* Adjusts the Header styles */
     header {
         background-color: skyblue;
         border-bottom: 4px solid black;
@@ -37,7 +37,7 @@
         width: 100%;
     }
 
-    /*Adjusts the header h1 styles for Universitites.html */
+    /*Adjusts the header h1 styles */
     header h1 {
          color: black; 
          background-color: skyblue;
@@ -68,7 +68,7 @@
 
     }
 
-    /* Changes the color of the text for each link */
+    /* Changes the color of the text for each link*/
     header nav ul li a {
         text-decoration: none; 
         color: black;
@@ -77,6 +77,11 @@
     /* Changes the link to yellow once the cursor hovers over each one */
     header nav ul li a:hover {
          color: yellow;
+    }
+
+    /*Changes visited links to gold */
+    a:visited {
+        color: none;
     }
 
     nav ul {
@@ -149,6 +154,7 @@
 ************************************************************************************/
 
 
+
   /* Adjusts the styles of the h2 group */
      h2 {
         color: white;  
@@ -175,19 +181,8 @@
         
     }
 
-    #share-buttons img {
-        width: 25px;
-        padding: 5px;
-        border: 0;
-        box-shadow: 0;
-        display: inline;
-       
-        
-    }
 
-
-
-    /* Adjusts the footer styles */
+    /* Adjusts the footer styles */   
 
     footer {
         position: absolute;
@@ -200,5 +195,16 @@
         font-size: 0.8em;
         text-align: center;
       
+    }
+
+     #share-buttons img {
+        width: 25px;
+        padding: 5px;
+        border: 0;
+        box-shadow: 0;
+        display: inline;
+        
+       
+        
     }
 

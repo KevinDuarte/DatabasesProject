@@ -74,30 +74,22 @@
         background-color: red;
     }
 
-    table.events thead th:nth-of-type(7) {
-        background-color: orange;
+
+    table.events thead th {
+        background-color: grey;
+
     }
-
-    table.events thead th:nth-of-type(8) {
-        background-color: orange;
-    }
-
-
 
     /* These style adjust the columns for the table in Events.html */
 
     table.events col.EventName {
-         background-color: white;
+         background-color: yellow;
          width: 10%;
     }
 
-    table.events col.information {
-        width: 11%; 
-        background-color: salmon;
-    }
 
     table.events col.information {
-        background-color: lime;
+        background-color: lightgrey;
         width: 11%;
     }     
 

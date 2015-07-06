@@ -6,10 +6,11 @@
            -->
     
       <meta charset="UTF-8" />
-      <title>University Events: RSO</title>
+      <title>University Events: Event Details</title>
 
-      <link href="ViewRSO.css" rel="stylesheet" type="text/css" />
-      <link href="ViewRSOTable.css" rel="stylesheet" type="text/css" />
+      <link href="Details.css" rel="stylesheet" type="text/css" />
+      <link href="DetailsTable.css" rel="stylesheet" type="text/css" />
+  
    
 
 
@@ -45,42 +46,29 @@
             </ul>
          </nav>
 
- 
-
-      </header>
-
       </header> <!-- End of header -->
 
+
+
+
+<!------------------------------------------------------------------------
+
+    Table for Public Events
+
+------------------------------------------------------------------------->
+
       <div id="content"> <!-- Beginning of content -->
-      <section>
+      <section id = "publicEvents">
        
           <hgroup>
-            <h2>RSOs</h2>
+            <h2>Insert event name here</h2>
          </hgroup>
 
          <!-- State the purpose of the table -->
          <p>    <br />     </p>
 
-
-
-
-
-<!------------------------------------------------------
-
-    Beginning of table for Universitites
-
--------------------------------------------------------->
-
-
-
-         <table class="universities"
-                summary="Universities information page">
-             
-            <colgroup>
-               <col class="RSOName" />
-               <col class="information" span="3" />
-               
-            </colgroup>
+         <table class="events"
+                summary="Lists Events for a specific University">
 
 <!-------------------------------------------------------------
 
@@ -116,96 +104,68 @@
 ----------------------------------------------------------------->
 
 
+             
+            <colgroup>
+               <col class="EventName" />
+               <col class="information" span="1" />
+ 
+            </colgroup>
 
-            <thead> 
-                <tr>
-                  <th>RSO Name</th>
-                  <th>Location</th>
-                  <th>Number of Students</th>
-                  <th>Request to join RSO</th>
-               </tr>
-            </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
                <tr>
-                  <!-- x -->
-                  <th>Insert RSO name here </th>  
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
+                  <!-- Description of event-->
+                  <th>Description </th>                                        
+                  <td colspan="1"> Insert description here </td>
                </tr>
                
                <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
+                  <!--Date of event  -->
+                  <th>Date </th>          
+                  <td colspan="1"> Insert date here   </td>
                </tr>
               
                <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                 
+                  <!--Time of event  -->
+                  <th>Time </th>                         
+                  <td colspan="1"> Insert time here </td>
                </tr>
                
                <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
+                  <!--Contact Phone number of event  -->
+                  <th>Contact Phone </th>
+      
+                  <td colspan="1"> Insert Contact phone here  </td>
                </tr>
               
                <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
+                  <!--Contact Email of event -->
+                  <th>Contact Email </th>              
+                  <td colspan="1"> Insert Contact email here </td>
                </tr>
               
                <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
+                  <!--Takes user to comments section  -->
+                  <th>Comments </th>           
+                  <td colspan="1">  <a href="Comments.html" type="button"><button>View/Edit</button>  </td>
                </tr>
-
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                  
-               </tr>
+          
 
             </tbody> <!-- End of the body of the table -->
-        
-            <!-- <a href="CreateEvent.html"><button>Add Event</button> -->
-            <caption align ="bottom">   </caption>            
+              
         
          </table> <!-- End of the table -->
 
-<!------------------------------------------------------
-
-    End of table for Universitites
-
--------------------------------------------------------->
-
-
-
       </section> <!-- End of section -->
+
+
+ <!------------------------------------------------------------------------
+
+    End of table for Public Events
+
+------------------------------------------------------------------------->   
+
+
       </div>  <!-- End of content -->
      
       <div id="footer"> <!-- Beginning of footer -->
