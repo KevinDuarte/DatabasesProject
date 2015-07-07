@@ -118,13 +118,10 @@
             <thead> <!-- Heading of the table / Days of the week for Events -->
                 <tr>
                   <th>Event Name</th>
-                  <th>Category</th>
-                  <th>Description</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Contact Phone Number</th>
-                  <th>Contact E-mail</th>
                   <th>Rating</th>
+                  <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
@@ -135,11 +132,8 @@
                   <th> </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> </td>   
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -149,10 +143,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                 
-                  <td colspan="1"> </td> 
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -162,10 +153,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>             
-                  <td colspan="1"> </td>        
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -175,10 +163,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>         
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -188,10 +173,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>            
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -201,10 +183,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -214,10 +193,7 @@
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -227,10 +203,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -240,10 +213,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -253,10 +223,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -266,10 +233,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -279,10 +243,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -292,10 +253,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -305,10 +263,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -318,10 +273,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -348,7 +300,8 @@
 
 ------------------------------------------------------------------------->
 
-      <section id ="rsoEvents">
+      <div id="content"> <!-- Beginning of content -->
+      <section id = "RSOEvents">
        
           <hgroup>
             <h2>RSO Events</h2>
@@ -369,13 +322,10 @@
             <thead> <!-- Heading of the table / Days of the week for Events -->
                 <tr>
                   <th>Event Name</th>
-                  <th>Category</th>
-                  <th>Description</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Contact Phone Number</th>
-                  <th>Contact E-mail</th>
                   <th>Rating</th>
+                  <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
@@ -387,10 +337,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -400,10 +347,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                 
-                  <td colspan="1"> </td> 
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -413,10 +357,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>             
-                  <td colspan="1"> </td>        
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -426,10 +367,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>         
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -439,10 +377,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>            
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -452,10 +387,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -465,10 +397,7 @@
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -478,10 +407,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -491,10 +417,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -504,10 +427,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -517,10 +437,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -530,10 +447,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -543,10 +457,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -556,10 +467,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -569,10 +477,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -598,7 +503,8 @@
 
 ------------------------------------------------------------------------->
 
-      <section id ="privateEvents">
+      <div id="content"> <!-- Beginning of content -->
+        <section id = "PrivateEvents">
        
           <hgroup>
             <h2>Private Events</h2>
@@ -619,13 +525,10 @@
             <thead> <!-- Heading of the table / Days of the week for Events -->
                 <tr>
                   <th>Event Name</th>
-                  <th>Category</th>
-                  <th>Description</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Contact Phone Number</th>
-                  <th>Contact E-mail</th>
                   <th>Rating</th>
+                  <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
@@ -637,10 +540,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -650,10 +550,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                 
-                  <td colspan="1"> </td> 
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -663,10 +560,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>             
-                  <td colspan="1"> </td>        
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
                
@@ -676,10 +570,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>         
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -689,10 +580,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>            
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
               
@@ -702,10 +590,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>                
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -715,10 +600,7 @@
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -728,10 +610,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -741,10 +620,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -754,10 +630,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -767,10 +640,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -780,10 +650,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -793,10 +660,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -806,10 +670,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -819,10 +680,7 @@
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
                </tr>
 
@@ -834,6 +692,8 @@
          </table> <!-- End of the table -->
 
       </section> <!-- End of section -->
+
+
 
 <!------------------------------------------------------------------------
 

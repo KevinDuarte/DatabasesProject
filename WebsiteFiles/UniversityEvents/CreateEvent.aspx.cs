@@ -19,15 +19,13 @@ public partial class CreateEvent : System.Web.UI.Page
         string eventName = String.Format("{0}", Request.Form["EventName"]);
         string eventCategory = String.Format("{0}", Request.Form["EventCategory"]);
         string description = String.Format("{0}", Request.Form["description"]);
+        string address = String.Format("{0}", Request.Form["address"]);
         string date = String.Format("{0}", Request.Form["date"]);
         string time = String.Format("{0}", Request.Form["time"]);
         string phone = String.Format("{0}", Request.Form["PhoneNumber"]);
         string email = String.Format("{0}", Request.Form["email"]);
-        string address = "UCF Parking Lot";
+        
         RegexUtilities util = new RegexUtilities();
-
-        Response.Write(date + "   " + time);
-        return;
 
         //TODO connect to database and create the event
         if(eventName.CompareTo("") == 0 || eventCategory.CompareTo("") == 0 ||
@@ -143,12 +141,12 @@ public partial class CreateEvent : System.Web.UI.Page
                 insertOrganized.ExecuteNonQuery();
             }
 
+            //creates the heldAt relationship for the event
+            strSQL = String.Format("INSERT INTO heldAt(eventID, address) VALUES({0},'{1}')", eventID, address);
+            SqlCommand insertHeldAt = new SqlCommand(strSQL, objConnection);
+            insertHeldAt.ExecuteNonQuery();
 
-//TODO location is necessary
-
-
-
-
+            Response.Redirect("Events.aspx");
 
         }
         catch (Exception ex)

@@ -1,12 +1,12 @@
 /*
  
-  Style sheet for the table in ViewRSO.html
+  Style sheet for the table in Details.html
 
  
 */
 
     
-    /* Creates a column for the paragraph  */
+    /* Creates a column for the paragraph */
     p {
         -moz-column-count: 2;
         -webkit-column-count: 2;
@@ -22,8 +22,8 @@
     } 
 
 
-    /* Adjusts the table  */
-    table.universities {
+    /* Adjusts the table */
+    table.events {
         border: 2px solid black;
         border-collapse: collapse;
         font-family: Arial, Verdana, sans-serif;
@@ -33,7 +33,7 @@
 
 
     /* Adjusts the body for the table  */
-    table.universities tbody td {
+    table.events tbody td {
         border: 3px solid black; 
         font-size: 1.0em; 
         vertical-align: top; 
@@ -41,51 +41,40 @@
       
     }
 
-    /*Adjusts the caption for the table  */
+    /*Adjusts the row styles for the table  */    
 
-    table.universities caption {
-        display: table-caption;
-        text-align: bottom; 
-        font-size: 1.0em; 
-        caption-side: bottom;
-        color: yellow;
-    }
-
-    /*Adjusts the row styles for the table */    
-
-    table.universities tr {
+    table.events tr {
         height: 34px;
     }
 
 
-    /* TThese styles adjust the headers for the table  */
+    /* TThese styles adjust the headers for the table */
 
-    table.universities thead {
+    table.events thead {
         color: white; 
         background-color: rgb(105, 177, 60);
     }
 
-    table.universities th {
-        font-size: 0.7em; 
+    table.events th {
+        font-size: 1.0em; 
         border: 1px solid black;
     }
 
-    table.universitites thead th:first-of-type {
-        background-color: red;
-    }
 
-    table.universities thead th {
-        background-color: grey;
-    }
 
-    /* These style adjust the columns for the table */
+    /* These style adjust the columns for the table  */
 
-    table.universities col.RSOName {
+    table.events col.EventName {
          background-color: yellow;
          width: 10%;
     }
 
-    table.universities col.information {
+    table.events col.information {
+        width: 11%; 
+        background-color: lightgrey;
+    }
+
+    table.events col.information {
         background-color: lightgrey;
         width: 11%;
     }     

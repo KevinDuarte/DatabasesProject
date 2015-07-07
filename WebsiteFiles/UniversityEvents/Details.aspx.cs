@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Events : System.Web.UI.Page
+public partial class Details : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -13,11 +13,6 @@ public partial class Events : System.Web.UI.Page
     }
 
     protected void btnComment_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("Comments.aspx");
-    }
-
-    protected void btnDetails_Click(object sender, EventArgs e)
     {
         Response.Redirect("Comments.aspx");
     }

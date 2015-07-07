@@ -154,13 +154,6 @@
 ************************************************************************************/
 
 
-
-
-
-    
-
-
-
   /* Adjusts the styles of the h2 group */
      h2 {
         color: white;  
@@ -171,13 +164,6 @@
         text-align: center;
     }
 
-   /* Ajusts the styles of the paragraph delcared in Events.html */
-     p {
-        color: yellow;
-        font-size: 1.5em;
-        line-height: 1.4em;
-        margin: 15px;
-    }
 
     button {
         position: center;

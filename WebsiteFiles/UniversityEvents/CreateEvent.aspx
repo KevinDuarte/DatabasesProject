@@ -77,6 +77,10 @@
             <input name="description" id="description" type="text" 
                    required="required" />
 
+            <label for="address">Address *</label>
+            <input name="address" id="address" type="text" 
+                   required="required" />
+
             <!-- Asks the user to enter their email address -->
             <label for="date">Date *</label>
             <input name="date" id="date" type="date" 

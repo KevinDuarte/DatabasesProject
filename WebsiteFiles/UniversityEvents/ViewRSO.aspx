@@ -129,7 +129,7 @@
             <tbody> <!-- Beginning of the body of the table -->              
                <tr>
                   <!-- x -->
-                  <th> </th>  
+                  <th>Insert RSO name here </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -138,7 +138,7 @@
                
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -147,7 +147,7 @@
               
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -156,7 +156,7 @@
                
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -165,7 +165,7 @@
               
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -174,7 +174,7 @@
               
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
@@ -183,7 +183,7 @@
 
                <tr>
                   <!--  -->
-                  <th> </th>
+                  <th>Insert RSO name here</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> <button>Join</button> </td>
