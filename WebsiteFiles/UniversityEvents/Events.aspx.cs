@@ -115,7 +115,7 @@ public partial class Events : System.Web.UI.Page
             if(rsoReader.Read())
             {
                 strSql2 += String.Format("SELECT * FROM organizedBy O WHERE O.rsoID={0} ", rsoReader["rsoID"]);
-
+               
                 while(rsoReader.Read())
                 {
                     strSql2 += String.Format("OR O.rsoID={0} ", rsoReader["rsoID"]);
@@ -158,27 +158,13 @@ public partial class Events : System.Web.UI.Page
                         row.Cells[2].InnerHtml = Convert.ToString(rsoEventReader["time"]);
                         row.Cells[2].Align = "Center";
 
-                        strSQL = String.Format("SELECT * FROM hostedBy H WHERE H.eventID={0}", eventIDS[i - 1]);
-                        SqlCommand locationCommand = new SqlCommand(strSQL, objConnection);
-                        SqlDataReader locationReader = locationCommand.ExecuteReader();
+                        strSQL = String.Format("SELECT * FROM rso R WHERE R.rsoID={0}", rsoEventIDReader["rsoID"]);
+                        SqlCommand rsoCommand2 = new SqlCommand(strSQL, objConnection);
+                        SqlDataReader rsoReader2 = rsoCommand2.ExecuteReader();
 
-                        int eventUni = 0;
-                        if (locationReader.Read())
+                        if(rsoReader2.Read())
                         {
-                            eventUni = Convert.ToInt32(locationReader["universityID"]);
-                        }
-                        else
-                        {
-                            Response.Write("An error was encountered");
-                        }
-
-                        strSQL = String.Format("SELECT * FROM university U WHERE U.universityID={0}", eventUni);
-                        SqlCommand eventUniCommand = new SqlCommand(strSQL, objConnection);
-                        SqlDataReader eventUniReader = eventUniCommand.ExecuteReader();
-
-                        if (eventUniReader.Read())
-                        {
-                            row.Cells[3].InnerHtml = Convert.ToString(eventUniReader["name"]);
+                            row.Cells[3].InnerHtml = Convert.ToString(rsoReader2["name"]);
                             row.Cells[3].Align = "Center";
                         }
                         else

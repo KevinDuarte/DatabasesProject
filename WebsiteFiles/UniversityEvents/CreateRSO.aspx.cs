@@ -128,7 +128,7 @@ public partial class CreateRSO : System.Web.UI.Page
 
 
 
-            //Creates a new rso
+            //Creates a new rso INSERTS it into the Database
 
             strSQL = String.Format("INSERT INTO rso(name) VALUES('{0}')", rsoName);
             SqlCommand insertRSO = new SqlCommand(strSQL, objConnection);

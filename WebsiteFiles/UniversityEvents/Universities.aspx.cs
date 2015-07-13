@@ -42,6 +42,7 @@ public partial class Universities : System.Web.UI.Page
                 SqlCommand attendsCommand = new SqlCommand(strSQL, objConnection);
 
                 row.Cells[2].InnerHtml = Convert.ToString(Convert.ToInt32(attendsCommand.ExecuteScalar()));
+                row.Cells[2].Align = "Center";
 
                 //location
                 strSQL = String.Format("select * from locatedAt L where L.universityID={0}", i);

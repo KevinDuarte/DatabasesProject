@@ -264,7 +264,7 @@
                   <th>Event Name</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Location</th>
+                  <th>RSO</th>
                   <th>Details</th>
                   <th>Comments</th>
                </tr>

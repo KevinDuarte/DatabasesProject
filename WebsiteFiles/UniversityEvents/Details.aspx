@@ -33,7 +33,6 @@
          <nav>
             <ul> <!-- Unordered list for webpage links -->
                <li><a href="Universities.aspx">Universities</a></li>
-               <li><a href="About.aspx">About</a></li>
                <li><a href="#">RSO</a>
                     <ul>
                         <a href="CreateRSO.aspx">Create RSO</a>
@@ -156,7 +155,7 @@
               
                <tr runat="server" id="commentRow">
                   <th>Comments </th>           
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click">View/Edit</button>  </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click">Add/View/Edit</button>  </td>
                </tr>
           
 

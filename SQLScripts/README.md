@@ -7,7 +7,9 @@ first_name varchar(20) NOT NULL,
 last_name varchar(20) NOT NULL,
 password varchar(20) NOT NULL,
 email varchar(50) NOT NULL UNIQUE,
-PRIMARY KEY (studentID)
+universityID int,
+PRIMARY KEY (studentID),
+FOREIGN KEY (universityID) REFERENCES university(universityID)
 );
 
 /*admin table, ISA relationship with student*/
@@ -21,7 +23,9 @@ CREATE TABLE rso
 (
 rsoID int IDENTITY(1,1),
 name varchar(50),
-PRIMARY KEY (rsoID)
+adminID int,
+PRIMARY KEY (rsoID),
+FOREIGN KEY (adminID) REFERENCES admin(adminID)
 );
 
 
@@ -44,7 +48,9 @@ contact_email varchar(50),
 date DATE,
 time TIME,
 pubprirso int,
-PRIMARY KEY (eventID)
+universityID int,
+PRIMARY KEY (eventID),
+FOREIGN KEY (universityID) REFERENCES (universityID)
 );
 
 CREATE TABLE university 

@@ -51,6 +51,21 @@ public partial class Comments : System.Web.UI.Page
                     {
                         text += ("by " + nameReader["first_name"] + " " + nameReader["last_name"]);
                         tCell.Text = text;
+
+                        if(Convert.ToInt32(nameReader["studentID"]) == Convert.ToInt32(Session["studentID"]))
+                        {
+                            tCell = new TableCell();
+                            tRow.Cells.Add(tCell);
+                            tCell.Height = 35;
+                            tCell.Width = 50;
+
+                            Button deleteButton = new Button();
+                            deleteButton.Text = "Delete Comment";
+                            deleteButton.Width = 50;
+                            deleteButton.Height = 35;
+                            deleteButton.Click += new EventHandler(this.OnDeleteBtn_Click);
+                            tCell.Controls.Add(deleteButton);
+                        }
                     }
                     else
                     {
@@ -74,6 +89,21 @@ public partial class Comments : System.Web.UI.Page
                         {
                             text += ("by " + nameReader2["first_name"] + " " + nameReader2["last_name"]);
                             tCell.Text = text;
+
+                            if (Convert.ToInt32(nameReader2["studentID"]) == Convert.ToInt32(Session["studentID"]))
+                            {
+                                tCell = new TableCell();
+                                tRow.Cells.Add(tCell);
+                                tCell.Height = 35;
+                                tCell.Width = 50;
+
+                                Button deleteButton = new Button();
+                                deleteButton.Text = "Delete Comment";
+                                deleteButton.Width = 50;
+                                deleteButton.Height = 35;
+                                deleteButton.Click += new EventHandler(this.OnDeleteBtn_Click);
+                                tCell.Controls.Add(deleteButton);
+                            }
                         }
                         else
                         {
@@ -104,6 +134,34 @@ public partial class Comments : System.Web.UI.Page
         }
     }
 
+    protected void OnDeleteBtn_Click(object sender, EventArgs e)
+    {
+        SqlConnection objConnection = new SqlConnection("Data Source=184.168.194.68;Initial Catalog=EventsDB;Integrated Security=False;User ID=kevin95duarte;password=sqlpassword1;Connect Timeout=15;Encrypt=False;Packet Size=4096;MultipleActiveResultSets=True");
+
+        try
+        {
+            objConnection.Open();
+
+            String strSQL = String.Format("DELETE FROM comments WHERE studentID={0}", Session["studentID"]);
+            SqlCommand deleteComment = new SqlCommand(strSQL, objConnection);
+            deleteComment.ExecuteNonQuery();
+
+            Response.Redirect("Comments.aspx");
+        }
+        catch (Exception ex)
+        {
+            Response.Write(ex.Message.ToString());
+        }
+        finally
+        {
+            if (objConnection.State == ConnectionState.Open)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+
     protected void btnSubmitCom_Click(object sender, EventArgs e)
     {
         string comment = String.Format("{0}", Request.Form["comment"]);
@@ -119,10 +177,22 @@ public partial class Comments : System.Web.UI.Page
         {
             objConnection.Open();
 
-            String strSQL = String.Format("INSERT INTO comments(studentID, eventID, comment) VALUES({0}, {1}, '{2}')", Session["studentID"], Session["eventID"], comment);
-            SqlCommand insertHosted = new SqlCommand(strSQL, objConnection);
-            insertHosted.ExecuteNonQuery();
+            String strSQL = String.Format("SELECT * FROM comments WHERE studentID={0}", Session["studentID"]);
+            SqlCommand checkEvent = new SqlCommand(strSQL, objConnection);
+            SqlDataReader reader = checkEvent.ExecuteReader();
 
+            if(reader.Read())
+            {
+                Response.Write("You already have a comment for this event, please delete your old one to make a comment");
+            }
+            else
+            {
+                strSQL = String.Format("INSERT INTO comments(studentID, eventID, comment) VALUES({0}, {1}, '{2}')", Session["studentID"], Session["eventID"], comment);
+                SqlCommand insertHosted = new SqlCommand(strSQL, objConnection);
+                insertHosted.ExecuteNonQuery();
+
+                Response.Redirect("Comments.aspx");
+            }
         }
         catch (Exception ex)
         {

@@ -89,7 +89,7 @@
   <h3 id="text">Leave a Comment</h3>
 
         <label for="comment" class="required" id="text">Message</label>
-        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+        <textarea name="comment" id="comment" rows="10" tabindex="4"></textarea>
 
         <!-- comment_post_ID value hard-coded as 1 -->
         <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
