@@ -56,11 +56,27 @@
       <section>
        
           <hgroup>
-            <h2>Event Comments</h2>
+            <h2 runat="server" id="EventNameHere">Event Comments</h2>
          </hgroup>
 
          <!-- State the purpose of the table -->
          <p>    <br />     </p>
+
+<!-------------------------- Comments --------------------->
+
+
+         
+          <asp:Table ID="commentTable" 
+                    BorderColor="black" 
+                    BorderWidth="1" 
+                    GridLines="Both"
+                    runat="server" 
+                    align="center"
+                    Width="1000"
+                    />
+
+
+
 
 
 <!------------------------------------------------------
@@ -71,12 +87,6 @@
    <div id="respond">
 
   <h3 id="text">Leave a Comment</h3>
-
-        <label for="comment_author" class="required" id="text">Name: </label>
-        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
-
-        <label for="email" class="required" id="text">E-mail: </label>
-        <input type="email" name="email" id="email" value="" tabindex="2" required="required">
 
         <label for="comment" class="required" id="text">Message</label>
         <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>

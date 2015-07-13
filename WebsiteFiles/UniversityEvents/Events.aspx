@@ -120,161 +120,101 @@
                   <th>Event Name</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Rating</th>
+                  <th>Location</th>
                   <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- x -->
+               <tr runat="server" id="publicRow1">
                   <th> </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>   
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det1">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com1">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow2">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det2">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com2">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow3">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det3">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com3">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow4">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det4">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com4">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow5">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det5">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com5">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow6">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det6">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com6">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow7">
                   <th> </th>
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det7">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com7">Add/View/Edit</button> </td>
                </tr>
 
-                <tr>
-                  <!--  -->
+                <tr runat="server" id="publicRow8">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det8">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com8">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow9">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det9">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com9">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="publicRow10">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-               <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det10">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com10">Add/View/Edit</button> </td>
                </tr>
 
             </tbody> <!-- End of the body of the table -->
@@ -324,162 +264,103 @@
                   <th>Event Name</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Rating</th>
+                  <th>Location</th>
                   <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- x -->
+               <tr runat="server" id="rsoRow1">
                   <th> </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det11">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com11">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow2">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det12">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com12">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow3">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det13">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com13">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow4">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det14">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com14">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow5">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det15">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com15">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow6">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det16">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com16">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow7">
                   <th> </th>
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det17">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com17">Add/View/Edit</button> </td>
                </tr>
 
-                <tr>
-                  <!--  -->
+                <tr runat="server" id="rsoRow8">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det18">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com18">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow9">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det19">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com19">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="rsoRow10">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det20">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com20">Add/View/Edit</button> </td>
                </tr>
 
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-               <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
 
             </tbody> <!-- End of the body of the table -->
         
@@ -527,161 +408,101 @@
                   <th>Event Name</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Rating</th>
+                  <th>Location</th>
                   <th>Details</th>
                   <th>Comments</th>
                </tr>
             </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- x -->
+               <tr runat="server" id="privateRow1">
                   <th> </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det21">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com21">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow2">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det22">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com22">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow3">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det23">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com23">Add/View/Edit</button> </td>
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow4">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det24">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com24">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow5">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det25">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com25">Add/View/Edit</button> </td>
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow6">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det26">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com26">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow7">
                   <th> </th>
                   <td contenteditable='true' colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det27">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com27">Add/View/Edit</button> </td>
                </tr>
 
-                <tr>
-                  <!--  -->
+                <tr runat="server" id="privateRow8">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det28">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com28">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow9">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det29">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com29">Add/View/Edit</button> </td>
                </tr>
 
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="privateRow10">
                   <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-                <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
-               </tr>
-
-               <tr>
-                  <!--  -->
-                  <th> </th>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click">View</button> </td>
-                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" >Add/View/Edit</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnDetails_Click" id="det30">View</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click" id="com30">Add/View/Edit</button> </td>
                </tr>
 
             </tbody> <!-- End of the body of the table -->

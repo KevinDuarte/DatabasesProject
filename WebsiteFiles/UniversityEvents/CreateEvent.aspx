@@ -76,7 +76,7 @@
             <label for="description">Description *</label>
             <input name="description" id="description" type="text" 
                    required="required" />
-
+     
             <label for="address">Address *</label>
             <input name="address" id="address" type="text" 
                    required="required" />

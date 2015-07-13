@@ -32,21 +32,21 @@
 
          <nav>
             <ul> <!-- Unordered list for webpage links -->
-               <li><a href="Universities.html">Universities</a></li>
-               <li><a href="About.html">About</a></li>
+               <li><a href="Universities.aspx">Universities</a></li>
+               <li><a href="About.aspx">About</a></li>
                <li><a href="#">RSO</a>
                     <ul>
-                        <a href="CreateRSO.html">Create RSO</a>
-                        <a href="ViewRSO.html">View/Join RSO</a>
+                        <a href="CreateRSO.aspx">Create RSO</a>
+                        <a href="ViewRSO.aspx">View/Join RSO</a>
                     </ul>
                </li>
                <li><a href="#">Events</a>
                     <ul>
-                        <a href="CreateEvent.html">Create Events</a>  <!--- Can only be accessed by the admin  -->
-                        <a href="Events.html">View Events</a>
+                        <a href="CreateEvent.aspx">Create Events</a>  <!--- Can only be accessed by the admin  -->
+                        <a href="Events.aspx">View Events</a>
                     </ul>
                </li>
-               <li><a href="Home.html">Logout</a></li>
+               <li><a href="Home.aspx">Logout</a></li>
                       
             </ul>
          </nav>
@@ -66,7 +66,7 @@
       <section id = "publicEvents">
        
           <hgroup>
-            <h2>Insert event name here</h2>
+            <h2 runat="server" id="EventNameHere">Insert event name here</h2>
          </hgroup>
 
          <!-- State the purpose of the table -->
@@ -117,40 +117,44 @@
             </colgroup>
 
 
-            <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- Description of event-->
+            <tbody> <!-- Beginning of the body of the table --> 
+                <tr runat="server" id="categoryRow">
+                  <th>Category </th>                                        
+                  <td colspan="1"> Insert description here </td>
+               </tr>
+                             
+               <tr runat="server" id="descriptionRow">
                   <th>Description </th>                                        
                   <td colspan="1"> Insert description here </td>
                </tr>
                
-               <tr>
-                  <!--Date of event  -->
+               <tr runat="server" id="dateRow">
                   <th>Date </th>          
                   <td colspan="1"> Insert date here   </td>
                </tr>
               
-               <tr>
-                  <!--Time of event  -->
+               <tr runat="server" id="timeRow">
                   <th>Time </th>                         
                   <td colspan="1"> Insert time here </td>
                </tr>
+
+                <tr runat="server" id="locationRow">
+                  <th>Location </th>                                        
+                  <td colspan="1"> Insert description here </td>
+               </tr>
                
-               <tr>
-                  <!--Contact Phone number of event  -->
+               <tr runat="server" id="phoneRow">
                   <th>Contact Phone </th>
       
                   <td colspan="1"> Insert Contact phone here  </td>
                </tr>
               
-               <tr>
-                  <!--Contact Email of event -->
+               <tr runat="server" id="emailRow">
                   <th>Contact Email </th>              
                   <td colspan="1"> Insert Contact email here </td>
                </tr>
               
-               <tr>
-                  <!--Takes user to comments section  -->
+               <tr runat="server" id="commentRow">
                   <th>Comments </th>           
                   <td colspan="1"> <button runat="server" OnServerClick="btnComment_Click">View/Edit</button>  </td>
                </tr>

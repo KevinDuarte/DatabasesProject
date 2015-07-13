@@ -38,6 +38,7 @@ CREATE TABLE event
 eventID int IDENTITY(1,1),
 type varchar(100),
 name varchar(100),
+description varchar(1000),
 contact_phone varchar(20),
 contact_email varchar(50),
 date DATE,

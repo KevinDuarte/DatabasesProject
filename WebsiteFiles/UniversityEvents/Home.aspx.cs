@@ -79,9 +79,4 @@ public partial class Home : System.Web.UI.Page
     {
         Response.Redirect("CreateAccount.aspx");
     }
-
-    protected void btnForgotPass_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("ForgotPassword.aspx");
-    }
 }

@@ -90,8 +90,8 @@ public partial class CreateEvent : System.Web.UI.Page
 
 
             //Create the event
-            strSQL = String.Format("INSERT INTO event(type, name, contact_phone, contact_email, date, time, pubprirso) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', {6})",
-                                    eventCategory, eventName, phone, email, date, time, pubprirso);
+            strSQL = String.Format("INSERT INTO event(type, name, description, contact_phone, contact_email, date, time, pubprirso) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', {7})",
+                                    eventCategory, eventName, description, phone, email, date, time, pubprirso);
             SqlCommand insertEvent = new SqlCommand(strSQL, objConnection);
             insertEvent.ExecuteNonQuery();
 

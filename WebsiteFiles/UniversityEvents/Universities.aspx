@@ -89,17 +89,15 @@
             </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- x -->
+               <tr runat="server" id="row1">
                   <th>University of Central Florida</th>  
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
-                  <td colspan="1"> </td>
+                  <td colspan="1">UCF Location</td>
+                  <td colspan="1">UCF num of students</td>
+                  <td colspan="1">Information</td>
                   
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="row2">
                   <th>University of South Florida</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -107,8 +105,7 @@
                   
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="row3">
                   <th>University of Miami</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -116,8 +113,7 @@
                  
                </tr>
                
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="row4">
                   <th>University of Florida</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -125,8 +121,7 @@
                   
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="row5">
                   <th>Florida State University</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -134,8 +129,7 @@
                   
                </tr>
               
-               <tr>
-                  <!--  -->
+               <tr runat="server" id="row6">
                   <th>Florida International University</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -143,9 +137,8 @@
                   
                </tr>
 
-               <tr>
-                  <!--  -->
-                  <th>Florida Atlantic university</th>
+               <tr runat="server" id="row7">
+                  <th>Florida Atlantic University</th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
@@ -155,7 +148,7 @@
             </tbody> <!-- End of the body of the table -->
         
             <!-- <a href="CreateEvent.html"><button>Add Event</button> -->
-            <caption align ="bottom">   </caption>            
+            <caption align="bottom">   </caption>            
         
          </table> <!-- End of the table -->
 
@@ -164,7 +157,6 @@
     End of table for Universitites
 
 -------------------------------------------------------->
-
 
 
       </section> <!-- End of section -->

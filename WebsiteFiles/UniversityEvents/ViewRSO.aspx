@@ -120,73 +120,66 @@
             <thead> <!-- Heading of the table / Days of the week for Events -->
                 <tr>
                   <th>RSO Name</th>
-                  <th>Location</th>
+                  <th>Number of Events</th>
                   <th>Number of Students</th>
                   <th>Request to join RSO</th>
                </tr>
             </thead>
 
             <tbody> <!-- Beginning of the body of the table -->              
-               <tr>
-                  <!-- x -->
-                  <th>Insert RSO name here </th>  
+               <tr runat="server" id="row1">
+                  <th> </th>  
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow1_Click" id="button1">Join</button> </td>
                   
                </tr>
                
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
+               <tr runat="server" id="row2">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow2_Click" id="button2">Join</button> </td>
                   
                </tr>
               
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
+               <tr runat="server" id="row3">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
-                 
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow3_Click" id="button3">Join</button> </td>
+                  
                </tr>
                
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
+               <tr runat="server" id="row4">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow4_Click" id="button4">Join</button> </td>
                   
                </tr>
               
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
+               <tr runat="server" id="row5">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow5_Click" id="button5">Join</button> </td>
                   
                </tr>
               
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here </th>
+               <tr runat="server" id="row6">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow6_Click" id="button6">Join</button> </td>
                   
                </tr>
 
-               <tr>
-                  <!--  -->
-                  <th>Insert RSO name here</th>
+               <tr runat="server" id="row7">
+                  <th> </th>
                   <td colspan="1"> </td>
                   <td colspan="1"> </td>
-                  <td colspan="1"> <button>Join</button> </td>
+                  <td colspan="1"> <button runat="server" OnServerClick="btnRow7_Click" id="button7">Join</button> </td>
                   
                </tr>
 
