@@ -142,7 +142,7 @@ public partial class Comments : System.Web.UI.Page
         {
             objConnection.Open();
 
-            String strSQL = String.Format("DELETE FROM comments WHERE studentID={0}", Session["studentID"]);
+            String strSQL = String.Format("DELETE FROM comments WHERE studentID={0} AND eventID={1}", Session["studentID"], Session["eventID"]);
             SqlCommand deleteComment = new SqlCommand(strSQL, objConnection);
             deleteComment.ExecuteNonQuery();
 
@@ -169,6 +169,7 @@ public partial class Comments : System.Web.UI.Page
         if(comment.CompareTo("") == 0)
         {
             Response.Write("Complete all fields");
+            return;
         }
 
         SqlConnection objConnection = new SqlConnection("Data Source=184.168.194.68;Initial Catalog=EventsDB;Integrated Security=False;User ID=kevin95duarte;password=sqlpassword1;Connect Timeout=15;Encrypt=False;Packet Size=4096;MultipleActiveResultSets=True");
@@ -177,7 +178,7 @@ public partial class Comments : System.Web.UI.Page
         {
             objConnection.Open();
 
-            String strSQL = String.Format("SELECT * FROM comments WHERE studentID={0}", Session["studentID"]);
+            String strSQL = String.Format("SELECT * FROM comments WHERE studentID={0} AND eventID={1}", Session["studentID"], Session["eventID"]);
             SqlCommand checkEvent = new SqlCommand(strSQL, objConnection);
             SqlDataReader reader = checkEvent.ExecuteReader();
 
